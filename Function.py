@@ -1,8 +1,6 @@
-def mostrar_produtos()
-    
-def listar_produtos()
+def Adicionar_produto():
+    pass
 
-def Adicionar_produto()
-
-def Exluir_prudutos()
+def Exluir_produto():
+    pass
     

@@ -1,10 +1,10 @@
 def Adicionar_produto():
     pass
-    
 
-def Exluir_produto_carrinho():
+
+def Exluir_produto():
     pass
-    
+
 def excluir_carrinho():
     posicao = 1
     for produto in Loja.lista_produto:
@@ -16,8 +16,9 @@ def excluir_carrinho():
                 return 'Foi deletado com sucesso!'
             
             if select == 'nao':
-                
+                pass
 
             else:
                 return 'Erro!'
             posicao += 1
+

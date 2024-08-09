@@ -1,5 +1,4 @@
 def Adicionar_produto():
-<<<<<<< HEAD
     pass
 
 
@@ -23,10 +22,8 @@ def excluir_carrinho():
                 return 'Erro!'
             posicao += 1
 
-=======
     pass
 
 def Exluir_produto():
     pass
     
->>>>>>> 333b0df0deae343759610b8179bd991c73fcefd7

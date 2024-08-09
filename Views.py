@@ -13,6 +13,10 @@ def sub_menu_cliente():
     print("2-Adicionar produto ao carrinho: ")
     print("3-Remover produto do carrinho: ")
 
+def sub_menu_adm():
+    print("1-Adicionar produto: ")
+    print("2-Excluir produto: ")
+
 def realizar_login():
     pass
 

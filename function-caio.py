@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from Views import *
 from Classes import *
 def Adicionar_produto():
@@ -20,5 +19,4 @@ def Excluir_produto():
             print("O produto foi deletado")
         i+=1
     
-=======
->>>>>>> 38468f820496c10594aa235f726133c00eeefd70
+

@@ -1,3 +1,7 @@
+from Classes import*
+from Views import*
+from Main import*
+
 # Adicionar Produto
 def Adicionar_produto():
     pass

@@ -1,9 +1,17 @@
-# Adicionar Produto
-def Adicionar_produto():
-    pass
+from Classes import*
+from Views import*
+
+import random 
+import string 
+
+def id_generate():
+    id = ''.join([random.choice(string.ascii_letters 
+    + string.digits) for n in range(32)]) 
+    print(id)
+
 
 # Excluir Produto
-def Exluir_produto():
+def exluir_produto():
     posicao = 1
     escolha_produto = input('Digite o id do produto escolhido: ')
     for produto in Loja.lista_produto:
@@ -48,5 +56,18 @@ def criar_usuario():
     telefone = input("Digite o seu Telefone: ")
     email = input("Digite o seu Email: ")
     senha = input("Digite sua senha: ")
+    id = id_generate()
     # Chamada de funcao Salto para cria o id
-    Usuario = Usuario(nome,idade,cpf,)
+    usuario = Usuario(nome, idade, cpf, telefone, email, senha, id)
+    Loja.lista_usuario.append(usuario)
+
+# Adicionar Produto
+def criar_produto():
+    nome = input("Digite o seu Nome: ")
+    preco = input("Digite o Preço do produto: ")
+    descricao = input("Digite a Descrição do produto: ")
+    codigo = input("Digite o seu Código: ")
+    id = id_generate()
+    # Chamada de funcao Salto para cria o id
+    produto = Produto(nome, preco, descricao, codigo, id)
+    Loja.lista_produto.append(produto)

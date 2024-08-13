@@ -14,33 +14,33 @@ class Produto():
     nome: str
     preco: float
     descricao: str
-    id_produto: str
+    codigo: str
 
-    def __init__(self,nome,preco,descricao,id_produto):
+    def __init__(self,nome,preco,descricao,codigo):
         nome = nome
         preco = preco
         descricao = descricao
-        id_produto = id_produto
+        codigo = codigo
 
 class Usuario():
     nome: str
-    cpf: float
-    email: str
-    senha: str
+    idade: float
+    cpf: str
+    telefone:float
+    email:str
+    senha:str
 
-    def __init__(self,nome,cpf,email,senha):
+    def __init__(self,nome,idade,cpf,telefone,email,senha):
         self.nome = nome
+        self.idade = idade
         self.cpf = cpf
+        self.telefone = telefone
         self.email = email
         self.senha = senha    
     
-class Administrador:
+class Administrador(Usuario):
     _id = ''
-    nome = str
-    login = (Usuario)
 
-    def __init__(self,_id,nome,login):
+    def __init__(self,_id):
         self._id = _id
         self._id = ''
-        self.nome = nome
-        self.login = login

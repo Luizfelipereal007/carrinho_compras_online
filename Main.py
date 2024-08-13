@@ -1,13 +1,14 @@
 from Views import*
-from Classes import* 
+from Classes import*
+from Function import*
 while True:
        menu_principal()
        op=int(input("Opções")) 
        if 1==op:
-           realizar_cadastro
+           criar_usuario
        if 2==op:
-           realizar_login
+           
        if 3==op:
-           listar_produtos
+           excluir_carrinho
        if 4==op:
-           sair
+           criar_usuario

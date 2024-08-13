@@ -1,27 +1,31 @@
 from Function import*
+from Classes import*
 
 def menu_principal():
-    print("1-Realizar cadastro: ")
-    print("2-Realizar login: ")
-    print("3-Listar produtos: ")
-    print("4-Sair: ")
+    print("1-Criar usuario: ")
+    print("2-login usuario: ")
+    print("3-Adicionar produto: ")
+    print("4-Editar produto: ")
+    print("5-Remover produto: ")
 
-def realizar_cadastro():
+
+
+def adicionar_produto():
+    # produto=Produto
+    # Loja.lista_produto.append(produto)
     pass
-def sub_menu_cliente():
-    print("1-Visualizar produtos: ")
-    print("2-Adicionar produto ao carrinho: ")
-    print("3-Remover produto do carrinho: ")
-
-def sub_menu_adm():
-    print("1-Adicionar produto: ")
-    print("2-Excluir produto: ")
-
-def realizar_login():
+def excluir_produto():
     pass
-
-def listar_produtos():
+    # posicao=1
+    # escolha_produto=input("Digite o id do produto: ")
+    # for produto in Loja.lista_produto:
+    #     if len(Loja.lista_produto) > 0:
+    #         if escolha_produto == produto.nome:
+    #             print(f"O Produto na posição {posicao}° é\nNome -->{produto.nome}\tId -->{produto.id}")
+    #             select = input("Deseja excluir?\tsim\tnao")
+    #             if select == 'sim':
+    #                 del produto
+def excluir_carrinho():
     pass
-    
-def sair():
+def criar_usuario():
     pass

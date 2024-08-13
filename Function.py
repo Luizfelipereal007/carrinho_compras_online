@@ -9,6 +9,26 @@ def id_generate():
     + string.digits) for n in range(32)]) 
     print(id)
 
+def sub_menu_usuario():
+    print('''
+menu:
+(Digite dessa forma!)
+-->Nome
+-->Idade
+-->CPF
+-->Email
+-->senha
+''')
+def sub_menu_produto():
+    print('''
+menu:
+(Digite dessa forma!)
+-->Nome
+-->Preco
+-->Descricao
+-->Codigo
+''')
+
 
 # Excluir Produto
 def exluir_produto():
@@ -71,3 +91,75 @@ def criar_produto():
     # Chamada de funcao Salto para cria o id
     produto = Produto(id, nome, preco, descricao, codigo)
     Loja.lista_produto.append(produto)
+
+
+def editar_usuario():
+    nome_escolhido = input('Digite o nome da pessoa desejada: ')
+    for pessoa in Loja.lista_usuario:
+        if len(Loja.lista_usuario) > 0:
+
+            if pessoa.nome == nome_escolhido:
+                sub_menu_usuario()
+                opcao = input("Digite a opção do menu requisitada: ")
+
+                if opcao.lower() == 'nome':
+                    new_nome = input('Digite o novo Nome: ')
+                    pessoa.nome = new_nome
+
+                elif opcao.lower() == 'idade':
+                    new_idade = input('Digite a nova Idade: ')
+                    pessoa.idade = new_idade
+
+                elif opcao.lower() == 'cpf':
+                    new_cpf = input('Digite o novo CPF: ')
+                    pessoa.cpf = new_cpf
+
+                elif opcao.lower() == 'telefone':
+                    new_telefone = input('Digite o novo Telefone: ')
+                    pessoa.telefone = new_telefone
+
+                elif opcao.lower() == 'email':
+                    new_email = input('Digite o novo Email: ')
+                    pessoa.email = new_email
+
+                elif opcao.lower() == 'senha':
+                    new_senha = input('Digite a nova Senha: ')
+                    pessoa.senha = new_senha
+
+                else:
+                    return 'Erro!'
+            else:
+                return 'Erro!\nPessoa não encontrada.'
+        else: 
+            return 'Lista vazia!'
+        
+def editar_produto():
+    nome_escolhido = input('Digite o nome do produto desejado: ')
+    for produto in Loja.lista_produto:
+        if len(Loja.lista_produto) > 0:
+            if produto.nome == nome_escolhido:
+                sub_menu_produto()
+                opcao = input('Digite a opção do menu requisitada: ')
+
+                if opcao.lower() == 'nome':
+                    new_nome = input('Digite o novo Nome:')
+                    produto.nome = new_nome
+                    
+                elif opcao.lower() == 'preco':
+                    new_preco = input('Digite o novo Nome:')
+                    produto.preco = new_preco
+
+                elif opcao.lower() == 'descricao':
+                    new_descricao = input('Digite o novo Nome:')
+                    produto.descricao = new_descricao
+
+                elif opcao.lower() == 'codigo':
+                    new_codigo = input('Digite o novo Nome:')
+                    produto.codigo = new_codigo
+
+                else:
+                    return 'Erro!'
+            else:
+                return 'Erro!\nProduto não encontrado.'
+        else:
+            return 'Lista vazia!'

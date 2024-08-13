@@ -8,7 +8,7 @@ def id_generate():
     id = ''.join([random.choice(string.ascii_letters 
     + string.digits) for n in range(32)]) 
     print(id)
-
+# sub_menu do usuario
 def sub_menu_usuario():
     print('''
 menu:
@@ -19,6 +19,7 @@ menu:
 -->Email
 -->senha
 ''')
+# sub_menu do produto
 def sub_menu_produto():
     print('''
 menu:
@@ -92,7 +93,7 @@ def criar_produto():
     produto = Produto(id, nome, preco, descricao, codigo)
     Loja.lista_produto.append(produto)
 
-
+# Editar informacoes usuario
 def editar_usuario():
     nome_escolhido = input('Digite o nome da pessoa desejada: ')
     for pessoa in Loja.lista_usuario:
@@ -133,6 +134,7 @@ def editar_usuario():
         else: 
             return 'Lista vazia!'
         
+# Editar informacoes editar 
 def editar_produto():
     nome_escolhido = input('Digite o nome do produto desejado: ')
     for produto in Loja.lista_produto:

@@ -58,7 +58,7 @@ def criar_usuario():
     senha = input("Digite sua senha: ")
     id = id_generate()
     # Chamada de funcao Salto para cria o id
-    usuario = Usuario(nome, idade, cpf, telefone, email, senha, id)
+    usuario = Usuario(id, nome, idade, cpf, telefone, email, senha)
     Loja.lista_usuario.append(usuario)
 
 # Adicionar Produto
@@ -69,5 +69,5 @@ def criar_produto():
     codigo = input("Digite o seu Código: ")
     id = id_generate()
     # Chamada de funcao Salto para cria o id
-    produto = Produto(nome, preco, descricao, codigo, id)
+    produto = Produto(id, nome, preco, descricao, codigo)
     Loja.lista_produto.append(produto)

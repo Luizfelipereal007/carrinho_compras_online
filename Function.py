@@ -186,3 +186,4 @@ def validar_senha(password):
             return "Erro!\nSenha incorreta!"
         continue
     
+    

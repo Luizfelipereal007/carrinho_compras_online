@@ -12,20 +12,18 @@ while close:
         criar_usuario()
 
     elif menu == '2':
-        login()
-
-    elif menu == '3':
-        criar_produto()
-
-    elif menu == '4':
-        editar_produto()
+        if login():     
+            sub_menu_cliente()
+            if menu == '3':
+                criar_produto()
+            elif menu == '4':
+                editar_produto()
 
     elif menu == '5':
         exluir_produto()
         
     elif menu == '6':
-        pass
-    elif menu == '7':
-        pass
+        editar_usuario()
+        
     else:
         print('Erro!\nOpção não encontrada.')

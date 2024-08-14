@@ -171,7 +171,8 @@ def login():
     senha = input('Digite sua senha: ')
     validar_usuario(usuario)
     validar_senha(senha)
-
+    if usuario == 'ADM':
+        return 'ADM'
 
 def validar_usuario(username):
     for pessoa in Loja.lista_usuario:

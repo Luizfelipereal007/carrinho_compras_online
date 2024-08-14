@@ -12,7 +12,11 @@ while close:
         criar_usuario()
 
     elif menu == '2':
-        if login():     
+        if login() == 'ADM': 
+            sub_menu_adm()
+            opcao = input('Digite uma opção da ')
+
+        else:   
             sub_menu_cliente()
             if menu == '3':
                 criar_produto()

@@ -11,36 +11,40 @@ class Loja:
         validacao = validacao
 
 class Produto():
+    id = str
     nome: str
     preco: float
     descricao: str
-    id_produto: str
+    codigo: str
 
-    def __init__(self,nome,preco,descricao,id_produto):
-        nome = nome
-        preco = preco
-        descricao = descricao
-        id_produto = id_produto
+    def __init__(self,id,nome,preco,descricao,codigo):
+        self.id=id
+        self.nome = nome
+        self.preco = preco
+        self.descricao = descricao
+        self.codigo = codigo
 
 class Usuario():
+    id = str
     nome: str
-    cpf: float
-    email: str
-    senha: str
+    idade: float
+    cpf: str
+    telefone:float
+    email:str
+    senha:str
 
-    def __init__(self,nome,cpf,email,senha):
+    def __init__(self,id,nome,idade,cpf,telefone,email,senha):
+        self.id = id
         self.nome = nome
+        self.idade = idade
         self.cpf = cpf
+        self.telefone = telefone
         self.email = email
         self.senha = senha    
     
-class Administrador:
-    _id = ''
-    nome = str
-    login = (Usuario)
+class Administrador(Usuario):
+    id = ''
 
-    def __init__(self,_id,nome,login):
-        self._id = _id
-        self._id = ''
-        self.nome = nome
-        self.login = login
+    def __init__(self,id):
+        self.id = id
+        self.id = ''

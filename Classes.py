@@ -54,3 +54,4 @@ class Administrador(Usuario):
         self.nome = nome
         self.usuario = usuario
         self.senha = senha
+        

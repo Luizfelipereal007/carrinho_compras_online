@@ -12,7 +12,8 @@ while close:
         criar_usuario()
 
     elif menu == '2':
-        pass
+        login()
+
     elif menu == '3':
         criar_produto()
 

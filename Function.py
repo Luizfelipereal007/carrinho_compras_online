@@ -165,3 +165,22 @@ def editar_produto():
                 return 'Erro!\nProduto não encontrado.'
         else:
             return 'Lista vazia!'
+        
+def login():
+    usuario = input('Digite seu nome de Usuário: ')
+    senha = input('Digite sua senha: ')
+    validar_usuario(usuario)
+    validar_senha(senha)
+
+
+def validar_usuario(username):
+    for pessoa in Loja.lista_usuario:
+        if pessoa.nome != username:
+            return 'Erro!\nNome incorreto!'
+        continue
+
+def validar_senha(password):
+    for pessoa in Loja.lista_usuario:
+        if pessoa.senha != password:
+            return "Erro!\nSenha incorreta!"
+        continue

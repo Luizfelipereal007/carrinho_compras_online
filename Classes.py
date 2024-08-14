@@ -11,6 +11,7 @@ class Loja:
         validacao = validacao
 
 class Produto():
+    id = str
     nome: str
     preco: float
     descricao: str
@@ -23,6 +24,7 @@ class Produto():
         codigo = codigo
 
 class Usuario():
+    id = str
     nome: str
     idade: float
     cpf: str
@@ -30,7 +32,8 @@ class Usuario():
     email:str
     senha:str
 
-    def __init__(self,nome,idade,cpf,telefone,email,senha):
+    def __init__(self,id,nome,idade,cpf,telefone,email,senha):
+        self.id = id
         self.nome = nome
         self.idade = idade
         self.cpf = cpf
@@ -39,8 +42,8 @@ class Usuario():
         self.senha = senha    
     
 class Administrador(Usuario):
-    _id = ''
+    id = ''
 
-    def __init__(self,_id):
-        self._id = _id
-        self._id = ''
+    def __init__(self,id):
+        self.id = id
+        self.id = ''

@@ -7,28 +7,7 @@ import string
 def id_generate():
     id = ''.join([random.choice(string.ascii_letters 
     + string.digits) for n in range(32)]) 
-    return id
-# sub_menu do usuario
-def sub_menu_usuario():
-    print('''
-menu:
-(Digite dessa forma!)
--->Nome
--->Idade
--->CPF
--->Email
--->senha
-''')
-# sub_menu do produto
-def sub_menu_produto():
-    print('''
-menu:
-(Digite dessa forma!)
--->Nome
--->Preco
--->Descricao
--->Codigo
-''')
+    print(id)
 
 
 # Excluir Produto
